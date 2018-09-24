@@ -197,9 +197,9 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
         if (maxImages == 0 && isChecked) {
             isChecked = false;
             new AlertDialog.Builder(this)
-                    .setTitle("Maximum " + maxImageCount + " Photos")
-                    .setMessage("You can only select " + maxImageCount + " photos at a time.")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setTitle("Limite de fotos")
+                    .setMessage("Você pode escolher no máximo " + maxImageCount + " fotos.")
+                    .setPositiveButton("Entendi", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
                         }
@@ -541,7 +541,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
                             try {
                                 bmp = this.tryToGetBitmap(file, options, rotate, false);
                             } catch (OutOfMemoryError e2) {
-                                throw new IOException("Unable to load image into memory.");
+                                throw new IOException("Não foi possível carregar a imagem.");
                             }
                         }
                     } else {
@@ -560,7 +560,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
                                 try {
                                     bmp = this.tryToGetBitmap(file, options, rotate, false);
                                 } catch (OutOfMemoryError e3) {
-                                    throw new IOException("Unable to load image into memory.");
+                                    throw new IOException("Não foi possível carregar a imagem.");
                                 }
                             }
                         }
@@ -631,7 +631,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
             }
 
             if (bmp == null) {
-                throw new IOException("The image file could not be opened.");
+                throw new IOException("Não foi possível carregar a imagem.");
             }
 
             if (options != null && shouldScale) {
