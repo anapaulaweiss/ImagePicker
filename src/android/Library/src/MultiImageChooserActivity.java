@@ -199,7 +199,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
             new AlertDialog.Builder(this)
                     .setTitle("Limite de fotos")
                     .setMessage("Você pode escolher no máximo " + maxImageCount + " fotos.")
-                    .setPositiveButton("Entendi", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("Entendi.", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
                         }
@@ -541,7 +541,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
                             try {
                                 bmp = this.tryToGetBitmap(file, options, rotate, false);
                             } catch (OutOfMemoryError e2) {
-                                throw new IOException("Não foi possível carregar a imagem.");
+                                throw new IOException("Erro ao carregar a imagem.");
                             }
                         }
                     } else {
@@ -560,7 +560,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
                                 try {
                                     bmp = this.tryToGetBitmap(file, options, rotate, false);
                                 } catch (OutOfMemoryError e3) {
-                                    throw new IOException("Não foi possível carregar a imagem.");
+                                    throw new IOException("Erro ao carregar a imagem.");
                                 }
                             }
                         }
@@ -631,7 +631,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
             }
 
             if (bmp == null) {
-                throw new IOException("Não foi possível carregar a imagem.");
+                throw new IOException("Erro ao carregar a imagem.");
             }
 
             if (options != null && shouldScale) {
