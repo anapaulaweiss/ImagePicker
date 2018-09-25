@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="multi_app_name">MultiImageChooser</string>
+    <string name="free_version_label">Imagens restantes: %d</string>
+    <string name="error_database">Ocorreu um erro ao abrir o banco de imagens.</string>
+    <string name="requesting_thumbnails">Lendo imagens, por favor, aguarde...</string>
+    <string name="multi_image_picker_processing_images_title">Processando imagens</string>
+    <string name="multi_image_picker_processing_images_message">Por favor, aguarde...</string>
+    <string name="discard" translatable="false">Cancelar</string>
+    <string name="done" translatable="false">OK</string>
+</resources>
