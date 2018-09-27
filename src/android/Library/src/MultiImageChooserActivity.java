@@ -199,7 +199,7 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
             new AlertDialog.Builder(this)
                     .setTitle("Limite de fotos")
                     .setMessage("Você pode escolher no máximo " + maxImageCount + " fotos.")
-                    .setPositiveButton("Entendi.", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("Entendi", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
                         }
