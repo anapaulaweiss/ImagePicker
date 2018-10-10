@@ -13,11 +13,12 @@
         android:fadingEdgeLength="10dip"
         android:fastScrollEnabled="true"
         android:gravity="center"
-        android:horizontalSpacing="8dip"
         android:numColumns="3"
         android:requiresFadingEdge="vertical"
         android:scrollingCache="true"
         android:stretchMode="columnWidth"
+        android:horizontalSpacing="8dip"
+        android:scrollbarStyle="outsideInset"
         android:verticalSpacing="8dip" />
 
 </LinearLayout>
